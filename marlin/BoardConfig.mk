@@ -30,7 +30,6 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_KERNEL := false
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := device/google/marlin/fstab.common
-TARGET_RELEASETOOLS_EXTENSIONS := device/qcom/common
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOOTLOADER_GCC_VERSION := arm-eabi-4.8
@@ -183,7 +182,8 @@ PROTOBUF_SUPPORTED := false
 
 #Add NON-HLOS files for ota upgrade
 ADD_RADIO_FILES := true
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_marlin
+TARGET_RELEASETOOLS_EXTENSIONS := device/google/marlin/recovery/oem-recovery
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 TARGET_RECOVERY_UI_LIB := librecovery_ui_nanohub
 

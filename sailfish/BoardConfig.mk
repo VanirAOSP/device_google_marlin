@@ -178,7 +178,8 @@ PROTOBUF_SUPPORTED := false
 
 #Add NON-HLOS files for ota upgrade
 ADD_RADIO_FILES := true
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm
+TARGET_RELEASETOOLS_EXTENSIONS := device/google/marlin/recovery/oem-recovery
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_marlin
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 TARGET_RECOVERY_UI_LIB := librecovery_ui_nanohub
 
