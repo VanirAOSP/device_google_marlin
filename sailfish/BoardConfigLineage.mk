@@ -1,2 +1,2 @@
-# BoardConfig for lineage_marlin
+# BoardConfig for lineage_sailfish
 include device/google/marlin/BoardConfigLineage.mk
